@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneCase - Coques de téléphone personnalisées</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PhoneCase</h1>
+            <p>Protégez votre smartphone avec style</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#produits">Nos produits</a></li>
+                <li><a href="#personnalisation">Personnalisation</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#panier"><i class="fas fa-shopping-cart"></i> Panier</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Coques uniques pour téléphones</h2>
+            <p>Découvrez notre collection exclusive de coques protectrices et stylées</p>
+            <a href="#produits" class="btn">Voir la collection</a>
+        </div>
+    </section>
+
+    <section id="produits">
+        <h2>Nos collections</h2>
+        <div class="produits-grid">
+            <!-- Produit 1 -->
+            <div class="produit-card">
+                <img src="images/coque1.jpg" alt="Coque iPhone transparente">
+                <h3>Coque iPhone transparente</h3>
+                <p>Protection claire pour montrer la beauté de votre téléphone</p>
+                <span class="prix">19.99€</span>
+                <button class="btn-ajouter">Ajouter au panier</button>
+            </div>
+            
+            <!-- Produit 2 -->
+            <div class="produit-card">
+                <img src="images/coque2.jpg" alt="Coque Samsung motif marbre">
+                <h3>Coque Samsung motif marbre</h3>
+                <p>Élégance et protection avec ce motif marbre unique</p>
+                <span class="prix">24.99€</span>
+                <button class="btn-ajouter">Ajouter au panier</button>
+            </div>
+            
+            <!-- Produit 3 -->
+            <div class="produit-card">
+                <img src="images/coque3.jpg" alt="Coque personnalisable">
+                <h3>Coque personnalisable</h3>
+                <p>Créez votre propre design pour une coque vraiment unique</p>
+                <span class="prix">29.99€</span>
+                <button class="btn-ajouter">Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="personnalisation">
+        <h2>Personnalisez votre coque</h2>
+        <div class="personnalisation-container">
+            <div class="configurateur">
+                <div class="preview-coque">
+                    <img src="images/coque-vide.png" alt="Prévisualisation coque" id="preview-coque">
+                </div>
+                <div class="options">
+                    <h3>Options de personnalisation</h3>
+                    <div class="option">
+                        <label for="modele-telephone">Modèle de téléphone:</label>
+                        <select id="modele-telephone">
+                            <option>iPhone 15</option>
+                            <option>Samsung Galaxy S23</option>
+                            <option>Google Pixel 7</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <label for="couleur-coque">Couleur de base:</label>
+                        <input type="color" id="couleur-coque" value="#ffffff">
+                    </div>
+                    <div class="option">
+                        <label for="upload-image">Ajouter une image:</label>
+                        <input type="file" id="upload-image" accept="image/*">
+                    </div>
+                    <div class="option">
+                        <label for="texte-personnalise">Texte personnalisé:</label>
+                        <input type="text" id="texte-personnalise" placeholder="Votre texte ici">
+                    </div>
+                    <button class="btn-preview">Prévisualiser</button>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="avantages">
+        <h2>Pourquoi choisir PhoneCase?</h2>
+        <div class="avantages-grid">
+            <div class="avantage">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Protection optimale</h3>
+                <p>Nos coques absorbent les chocs pour protéger votre téléphone</p>
+            </div>
+            <div class="avantage">
+                <i class="fas fa-palette"></i>
+                <h3>Design unique</h3>
+                <p>Des centaines de designs ou créez le vôtre</p>
+            </div>
+            <div class="avantage">
+                <i class="fas fa-truck"></i>
+                <h3>Livraison rapide</h3>
+                <p>Expédition sous 24h et livraison en 48h</p>
+            </div>
+            <div class="avantage">
+                <i class="fas fa-undo"></i>
+                <h3>Satisfait ou remboursé</h3>
+                <p>30 jours pour changer d'avis</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-envoyer">Envoyer</button>
+            </form>
+            <div class="contact-info">
+                <h3>Nos coordonnées</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Rue des Coques, Paris</p>
+                <p><i class="fas fa-phone"></i> 01 23 45 67 89</p>
+                <p><i class="fas fa-envelope"></i> contact@phonecase.fr</p>
+                <div class="reseaux-sociaux">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PhoneCase</h3>
+                <p>Votre spécialiste en coques de téléphone personnalisées depuis 2020.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="#">CGV</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre email">
+                    <button type="submit">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 PhoneCase - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
